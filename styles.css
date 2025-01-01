@@ -1,0 +1,192 @@
+/* CSS File: styles.css */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    transition: background-color 0.3s ease;
+}
+
+.navbar.fixed-top {
+    background-color: #091057; 
+}
+
+.navbar .navbar-toggler {
+    margin-right: 10px;
+    border-color: #091057; /* Change the border color */
+    background-color: #091057; /* Change the background color of the toggler */
+}
+
+/* Change the navbar-toggler icon stroke color */
+.navbar .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath stroke='%23ffffff' stroke-width='3' stroke-linecap='round' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+    /* Change `%23ffffff` to your desired color (e.g., `%23ff0000` for red) */
+}
+
+.navbar-brand {
+    font-family: "poppins";
+    font-weight: 500;
+    margin-left: 10px;
+    color: #ffffff;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* Default font color for nav links */
+.navbar .nav-link {
+    font-family: "poppins";
+    font-weight: 500;
+    color: #ffffff; /* Change to your desired font color */
+}
+
+/* Hover effect for nav links */
+.navbar .nav-link:hover {
+
+    color: #EC8305; /* Change to the hover color */
+}
+
+.navbar-nav {
+    margin-left: auto;
+    
+    }
+
+.hero-section {
+    background: #eae9e9;
+    height: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+}
+
+.hero-content {
+    display :flex;
+    align-items: center;
+    gap: 100px; /* Space between image and text */
+}
+
+.hero-image {
+    margin-left: 25px;
+    max-width: 300px; /* Adjust the size of the image */
+    height: auto;
+    border-radius: 50%; /* Makes the image circular */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+}
+
+.hero-section h1 {
+    font-family: "poppins";
+    font-weight: 700;
+    margin-left: 0;
+    color: #091057;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero-text {
+    text-align: left;
+}
+
+.hero-section .type{
+    font-family: "poppins";
+    font-weight: 500;
+    font-size: 20px;
+    margin-left: 2.5px;
+    color:#024CAA ;
+}
+
+.hero-section .type .typing2{
+    font-family: "poppins";
+    color: #EC8305;
+}
+
+.hero-section .social-links a {
+    color: white;
+    margin-left: 1px;
+    font-size: 1.5rem;
+    transition: color 0.3s;
+}
+
+.hero-section .social-links a:hover {
+    color: #007bff;
+}
+
+h2, h3 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.about-me {
+    text-align: center;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.timeline {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    position: relative;
+}
+
+.timeline li {
+    padding: 10px;
+    background-color: #ffffff;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.experience-item {
+    background-color: #ffffff;
+    width: 70px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-weight: bold;
+}
+
+
+.skill-bar .progress {
+    margin-bottom: 1rem;
+}
+
+.card {
+    margin-bottom: 1.5rem;
+}
+/* Additional responsive design */
+@media (max-width: 768px) {
+    .hero-section h1 {
+        font-size: 2rem;
+    }
+    .hero-content {
+        display :block;
+        align-items: center; 
+        
+    }
+    .hero-image {
+        margin-top: 30px;
+       margin-bottom: 30px;
+        margin-left: 25px;
+        max-width: 300px; /* Adjust the size of the image */
+        height: auto;
+        border-radius: 50%; /* Makes the image circular */
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+    }
+    .hero-text {
+        text-align: center;
+    }
+    .navbar .nav-link {
+        margin-left: 10px;
+    }
+
+}
